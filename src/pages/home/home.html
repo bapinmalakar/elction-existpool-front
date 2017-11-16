@@ -1,0 +1,17 @@
+<ion-header >
+  <ion-navbar>
+    <ion-title>
+      Gujarat Elections
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content [class.hide]="!isLoggedIn" padding>
+  <form (ngSubmit)="submit()">
+    <ion-item>
+      <ion-label color="primary" stacked>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="name" name="name" placeholder="John Doe"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Next</button>
+  </form>
+</ion-content>
